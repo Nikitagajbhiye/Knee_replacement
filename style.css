@@ -1,0 +1,965 @@
+body {
+    font-family: sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    background-color: white;
+    display: flex;
+}
+
+.header .logo1 img {
+    width: 330px;
+    height: 90px;
+    margin-left: 90px;
+}
+
+.header .logo2 img {
+    width: 167px;
+    height: 102px;
+}
+
+.header select {
+    float: right;
+}
+
+.header .contact {
+    display: flex;
+}
+
+.header .contact .contact-1 {
+    display: flex;
+}
+
+.header .contact .contact-2 {
+    display: flex;
+}
+
+.header .contact .contact-3 {
+    display: flex;
+}
+
+.header .contact .contact-icons {
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+}
+
+.header .contact .contact-information {
+    margin-top: 16px;
+    margin-left: 23px;
+    margin-right: 20px;
+}
+
+.header .contact .contact-information h4 {
+    margin-top: -11px;
+    font-size: 18px;
+}
+
+.header .contact .links {
+    text-decoration: none;
+    width: 300px;
+}
+
+.header .contact .links p {
+    color: grey;
+}
+
+.header .contact .links h4 {
+    color: black;
+}
+
+/* Dropdown */
+
+.dropbtn {
+    height: 35px;
+    cursor: pointer;
+    background-color: white;
+    margin-top: 20px;
+    border: none;
+}
+
+.dropbtn i {
+    margin-left: 5px;
+    color: #52b4ff;
+    font-size: 17px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 
+        0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* NAVBAR */
+
+.topnav {
+    background-color: #52b4ff;
+    overflow: hidden;
+    height: 55px;
+
+}
+
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 18px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.topnav input[type=text] {
+    flex: 1;
+    height: 40px;
+    background-color: #5f5fe9;
+    border: none;
+}
+
+.topnav input[type=text]::placeholder {
+    color: white;
+}
+
+.topnav i {
+    color: white;
+    margin: 20px;
+}
+
+.search {
+    float: right;
+    margin-right: 100px;
+    width: 251px;
+    height: 55px;
+    display: flex;
+    background-color: #5f5fe9;
+    align-items: center;
+}
+
+
+/* BANNER */
+
+.banner {
+	display: flex;
+	background: url(image/banner.png) no-repeat;
+	background-size: cover;
+	padding-top: 170px;
+	padding-bottom: 200px;
+    color: white;
+    height: 70px;
+}
+
+.banner .banner-text {
+	margin-left: 100px;
+    margin-top: -100px;
+    width: 610px;
+}
+
+.arrow {
+    border: solid red;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.banner .banner-text h3 {
+	font-size: 40px;
+}
+
+.banner .banner-text p {
+	font-size: 18px;
+	padding: 5px 0;
+}
+
+.banner .banner-text button {
+    background-color: #52b4ff;
+    color: white;
+    font-size: 16px;
+    padding: 15px 55px;
+    border: none;
+    cursor: pointer;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+
+/* MIDDLE CONTENT */
+
+.optionslider {
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  
+.optionslider a {
+    float: left;
+    display: block;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 48px;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+.optionslider a:hover {
+    border-bottom: 3px solid #52b4ff;
+  }
+  
+.optionslider a.active {
+    border-bottom: 3px solid #52b4ff;
+  }
+
+.overview {
+    padding: 80px 100px;
+}
+
+.overview .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 150px;
+   }
+   
+img {
+     max-width: 100%;
+     max-height:100%;
+   }
+
+.overview .container .text h1 {
+    font-size: 32px;
+}
+
+.overview .container .text p {
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.dashed-line {
+    border: 1px dashed #52b4ff;
+  }
+
+.eligibility .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 65px;
+   }
+
+.eligibility {
+    padding: 0px 100px;
+}
+
+.eligibility .container .text h1 {
+    font-size: 32px;
+    margin-top: -230px;
+}
+
+.eligibility .container .text p {
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.eligibility .container ul {
+    list-style: none;
+  }
+
+.eligibility .container ul li::before {
+    content: "o";
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+.preparation .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 65px;
+   }
+
+.preparation {
+    padding: 0px 100px;
+    margin-top: -180px;
+}
+
+.preparation .container .text h1 {
+    font-size: 32px;
+}
+
+.preparation .container .text p {
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.preparation .container ul {
+    list-style: none;
+  }
+
+.preparation .container ul li::before {
+    content: "o";
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.abouttreatment .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 65px;
+   }
+
+.abouttreatment {
+    padding: 60px 100px;
+}
+
+.abouttreatment .container .text h1 {
+    font-size: 32px;
+}
+
+.abouttreatment .container .text p {
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.abouttreatment .container ul {
+    list-style: none;
+  }
+
+.abouttreatment .container ul li::before {
+    content: "o";
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+.posttreatment .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 65px;
+   }
+
+.posttreatment {
+    padding: 00px 100px;
+}
+
+.posttreatment .container .text h1 {
+    font-size: 32px;
+}
+
+.posttreatment .container .text p {
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.posttreatment .container ul {
+    list-style: none;
+  }
+
+.posttreatment .container ul li::before {
+    content: "o";
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+.recoverytips .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 65px;
+   }
+
+.recoverytips {
+    padding: 60px 100px;
+}
+
+.recoverytips .container .text h1 {
+    font-size: 32px;
+}
+
+.recoverytips .container .text p {
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.recoverytips .container ul {
+    list-style: none;
+  }
+
+.recoverytips .container ul li::before {
+    content: "o";
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* FAQs */
+
+.faqs-options .container button {
+    border-top: 3px solid #dad5d5;
+}
+
+.treatmentfaqs .container .text {
+    margin-right: 400px;
+   }
+
+
+.collapsible {
+    border: 1px solid blue;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: white;
+  }
+  
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+
+.review {
+    padding: 60px 190px;
+    background-color: white;
+}
+
+.review .review-slider {
+    padding: 8px;
+  }
+  
+  .review .review-slider .box {
+      border: 1px solid gray;
+      background: #fff;	
+      height: 450px;
+      padding: 3rem 2rem;
+      outline-offset: -1rem;
+      transition: .2s linear;
+  }
+
+.review .review-slider .box h1 {
+    float: left;
+    font-size: 22px;
+    width: 248px;
+    margin-left: 2px;
+}
+  
+.review .review-slider .box img {
+        height: 100px;
+        width: 100px;
+        margin-top: 35px;
+        border-radius: 50%;
+  }
+  
+.review .review-slider .box p {
+        padding: 8px 0;
+        font-size: 15px;
+        color: var(--light-color);
+        line-height: 1.8;
+        margin-top: 25px;
+        /* text-align: left; */
+      }
+
+.review .review-slider .box h3 {
+        float: right;
+        font-size: 21px;
+        width: 160px;
+        margin-top: 60px;
+    }
+
+.review .review-slider .box .location {
+        float: right;
+        color: #a79999;
+        width: 161px;
+        margin-top: -35px;
+    }
+  
+
+/*  ENQUIRE FORM */
+
+.enquiry {
+    border: 2px solid #c6c3c3;
+    border-radius: 5px;
+    padding: 25px 30px;
+
+}
+
+.enquiry .login-form h2 {
+    color: #3fa9fa;
+    font-family: serif;
+    font-weight: 600;
+}
+
+.enquiry .login-form p {
+    text-decoration: none;
+}
+
+.enquiry .login-form .box {
+	width: 100%;
+	border: 2px solid #c6c3c3;
+	margin: 15px 0;
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 15px;
+	text-transform: none;
+    color: #c6c3c3;
+}
+
+::placeholder{
+    color: #c6c3c3;
+}
+
+.enquiry .login-form .btn {
+    background-color: #3fa9fa;
+    padding: 12px 92px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* DOCTORS SLIDER */
+
+.doctors {
+  text-align: center;
+  background-color: #d5e9f0;
+  height: 970px;
+  padding: 20px 0px;
+}
+
+.doctors h1 {
+    margin-top: 70px;
+    color: red;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: serif;
+}
+
+.doctors h2 {
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.column {
+    float: left;
+    width: 32%;
+    padding: 0px 25px;
+  }
+  
+  .row {
+    margin: 100px 0px;
+    padding: 0px 100px;
+}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-left: 40px;
+    height: 500px;
+}
+
+.card img {
+    height: 300px;
+    width: 500px;
+    justify-content: center;
+}
+
+.card h1 {
+    font-family: serif;
+    font-size: 27px;
+}
+
+.card h3 { 
+    font-size: 18px;
+}
+
+.card p {
+    color: gray;
+}
+
+
+/* HOSPITAL SLIDER */
+
+
+.hospitals {
+    text-align: center;
+    height: 970px;
+    padding: 20px 0px;
+  }
+  
+.hospitals h1 {
+      margin-top: 70px;
+      color: red;
+      font-size: 35px;
+      font-weight: 600;
+      font-family: serif;
+  }
+  
+.hospitals h2 {
+      margin-top: 10px;
+      font-size: 40px;
+  }
+  
+.hospitals .column {
+      float: left;
+      width: 32%;
+      padding: 0px 0px;
+    }
+    
+.hospitals .row {
+      margin: 100px 0px;
+      padding: 0px 100px;
+  }
+    
+.hospitals .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive columns */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    
+
+.hospitals .card {
+      padding: 0px;
+      text-align: center;
+      height: 440px;
+      border-style: dotted;
+      border-color: red;
+      border-width: 2px;
+    
+  }
+  
+.hospitals .card img {
+      height: 300px;
+  }
+ 
+.hospitals .card h3 { 
+    margin-top: 30px;
+      font-size: 25px;
+  }
+.hospitals .card h1 {
+      font-family: serif;
+      font-size: 20px;
+      margin-top: 20px;
+  }
+
+/* JOIN US CARD */
+
+.joinus {
+  background-color: white;
+  position: absolute;
+  width: 333px;
+  padding: 10px;
+  margin: -112px 1062px;
+  border-radius: 6px;
+}
+.joinus i {
+    color: red;
+    padding: 15px;
+}
+.joinus .upperpart {
+    display: flex;
+}
+
+.joinus .joinhospital h5 {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.joinus .joinhospital h1 {
+    font-size: 23px;
+}
+
+.joinus .joiningdetails p {
+    padding: 0px 14px;
+}
+  
+/* BLUE FOOTER */
+
+.blue-footer {
+    background-color: #76c3ff;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.blue-footer p{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.blue-footer h1 {
+    font-size: 60px;
+}
+
+.blue-footer .maindiv {
+    display: flex;
+    padding: 0px 420px;
+}
+
+.blue-footer .side1 button {
+    padding: 15px 75px;
+    background-color: #339ced;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    margin-top: 30px;
+}
+
+.blue-footer .vertical {
+    border-left: 2px solid white;
+    height: 100px;
+    position: flex;
+}
+
+.blue-footer .side2 {
+    margin-top: 40px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #29292c;
+    color: white;
+    padding: 80px 80px;
+}
+
+.footer .links {
+    padding: 0px 40px;
+}
+
+.footer h1 {
+    font-size: 22px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .links ul {
+    list-style: none;
+    margin-top: 25px;
+    line-height: 1.8;
+  }
+
+.footer .links ul li::before {
+    content: "-";
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.footer .tophospitals {
+    padding: 0px 40px;
+}
+
+.footer .tophospitals ul {
+    list-style: none;
+    margin-top: 25px;
+    line-height: 1.8;
+  }
+
+.footer .tophospitals ul li::before {
+  content: "-";
+  color: blue;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.footer .treatments {
+    padding: 0px 40px;
+}
+
+.footer .treatments ul {
+    list-style: none;
+    margin-top: 25px;
+    line-height: 1.8;
+  }
+
+.footer .treatments ul li::before {
+  content: "-";
+  color: blue;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.footer .destinations {
+    padding: 90px 40px;
+}
+
+.footer .destinations ul {
+    list-style: none;
+    margin-top: 25px;
+    line-height: 1.8;
+  }
+
+.footer .destinations ul li::before {
+  content: "-";
+  color: blue;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.first-footer {
+    display: flex;
+}
+
+.line {
+  border: 2px solid white;
+  opacity: 0.2;
+  width: 95%;
+}
+
+.lastfooter {
+    display: flex;
+}
+
+.lastfooter .logoimg img {
+    width: 1100px;
+    height: 160px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.lastfooter .aafiya {
+    width: 2147px;
+    height: 160px;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.lastfooter .followon {
+    width: 845px;
+    height: 160px;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.lastfooter .followon img {
+    width: 50px;
+    height: 50px;
+    padding: 7px 7px;
+    margin-top: 12px;
+}
+
+.lastfooter .followon h5 {
+    margin-top: 20px;
+}
+
+.lastfooter .followon h3 {
+    color: #52b4ff;
+}
+
+.copyright {
+    background-color: #52b4ff;
+    color: white;
+    display: flex;
+    height: 80px;
+}
+
+.copyright p {
+    padding: 27px 100px;
+}
+
+.copyright .terms {
+    padding: 27px 230px;
+}
